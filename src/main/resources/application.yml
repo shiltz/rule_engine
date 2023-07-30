@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://0.0.0.0:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+  sql:
+    init:
+      data-locations: classpath:database/data.sql
+      mode: always
+      continue-on-error: true
